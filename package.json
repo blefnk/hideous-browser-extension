@@ -2,7 +2,7 @@
   "author": {
     "email": "blefnk@gmail.com",
     "name": "Nazar Kornienko",
-    "url": "https://github.com/blefnk/template-browser-extension"
+    "url": "https://github.com/blefnk/hideous-browser-extension"
   },
   "dependencies": {
     "@reliverse/core": "npm:@jsr/reliverse__core",
@@ -12,9 +12,9 @@
     "@biomejs/biome": "1.8.1",
     "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.5.0",
-    "@stylistic/eslint-plugin": "^2.1.0",
+    "@stylistic/eslint-plugin": "^2.2.0",
     "@swc/cli": "^0.3.12",
-    "@swc/core": "^1.5.29",
+    "@swc/core": "^1.6.0",
     "@t3-oss/env-nextjs": "^0.10.1",
     "@total-typescript/ts-reset": "^0.5.1",
     "@types/bun": "^1.1.4",
@@ -40,14 +40,14 @@
     "semver": "^7.6.2",
     "tsx": "^4.15.5",
     "typescript": "^5.5.1-rc",
-    "typescript-eslint": "^7.13.0",
+    "typescript-eslint": "^8.0.0-alpha.30",
     "typestat": "^0.7.3",
     "web-ext": "^8.1.0"
   },
   "module": "src/index.ts",
-  "name": "template-browser-extension",
+  "name": "hideous-browser-extension",
   "scripts": {
-    "appts": "run-s knip format lint typestat typecheck build",
+    "appts": "run-s knip lint format typestat typecheck build",
     "build": "bun build ./src/index.ts --outdir ./extension/",
     "debug:eslint": "bun cross-env TIMING=12 eslint --fix .",
     "dev": "bun run src/index.ts",
@@ -59,7 +59,6 @@
     "lint": "bun eslint --cache --fix . && bun biome lint --write .",
     "lint:al": "bun addons-linter ./extension/",
     "lint:we": "bun web-ext lint",
-    "preinstall": "npx only-allow bun",
     "reli:help": "bun tsx reliverse.ts --help",
     "reli:pm": "tsx reliverse.ts --pm",
     "reli:vscode": "bun tsx .vscode/presets/switcher.ts",

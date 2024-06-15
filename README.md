@@ -1,8 +1,12 @@
-# template-browser-extension
+# hideous-browser-extension
 
-💡 Do you need a cool starter for your next cool browser extension? It's right here! ✅ Bun, TypeScript, ESLint v9, etc. 💻 Mozilla Firefox &amp; Chromium (Google Chrome, Microsoft Edge, Opera, Vivaldi, etc.)
+🪚 A browser extension that indicates whether a website or YouTube video was created by nasty creatures or uses their creations in its own and tries to explain the reason.
 
-⭐ The current project is part of the ecosystem of the [Relivator](https://github.com/blefnk/relivator) and [Reliverse](https://github.com/blefnk/reliverse) projects. 🙏 Please give a star to our projects to make them even better.
+## template-browser-extension
+
+💡 Do you need a cool starter for your next browser extension? You can use [template-browser-extension](https://github.com/blefnk/template-browser-extension)! ✅ Bun, TypeScript, ESLint v9, etc. 💻 Compatible with Mozilla Firefox and Chromium-based browsers (Google Chrome, Microsoft Edge, Opera, Vivaldi, etc.)
+
+⭐ This project is part of the ecosystem of the [Relivator](https://github.com/blefnk/relivator) and [Reliverse](https://github.com/blefnk/reliverse) projects. 🙏 Please give a star to our projects to make them even better.
 
 ## Scripts
 
@@ -14,7 +18,7 @@
 
 ## 🩷 Sponsors
 
-Thank you, everyone, for your support and for sharing this project! This project, Relivator, and Reliverse is currently sponsored by the following awesome people/organizations:
+Thank you, everyone, for your support and for sharing this project! This project, Relivator, and Reliverse are currently sponsored by the following awesome people/organizations:
 
 ### [Patreon](https://patreon.com/blefnk), [Buy Me a Coffee](https://buymeacoffee.com/blefnk), [Ko-fi](https://ko-fi.com/blefnk)
 
@@ -22,15 +26,15 @@ Love using this project? If you're feeling generous, I'd appreciate a cup of cof
 
 ### [Discord Server Boost](https://discord.gg/C4Z46fHKQ8)
 
-- </demir>
+- demir
 
 ## Roadmap
 
-TODO: Add `bun web-ext lint` to `bun lint` script, and `bun web-ext run` to `bun dev`. Currently the error is thrown `Error: Cannot find module './url'`.
+TODO: Add `bun web-ext lint` to the `bun lint` script, and `bun web-ext run` to `bun dev`. Currently, an error is thrown: `Error: Cannot find module './url'`.
 
-TODO: Try to remove `bun` and install `pnpm`. Check if `web-ext` works with this package manager, which works natively with `nodejs` (`bun` has own libs).
+TODO: Try to remove `bun` and install `pnpm`. Check if `web-ext` works with this package manager, which works natively with `nodejs` (`bun` has its own libs).
 
-TODO: `bun addons-linter ./extension/` doesn't works as well. This command throws an error `You did not build addons-linter yet`. Maybe because of `bun`.
+TODO: `bun addons-linter ./extension/` doesn't work as well. This command throws an error: `You did not build addons-linter yet`. Maybe because of `bun`.
 
 ## Resources
 
@@ -42,10 +46,10 @@ This project was created using `bun init` in bun v1.1.12. [Bun](https://bun.sh) 
 
 ## FAQ
 
-_You can find other RQs (Reliverse Questions) in the `[relivator-nextjs-template](https://github.com/blefnk/relivator-nextjs-template)` repo._
+_You can find other RQs (Reliverse Questions) in the [relivator-nextjs-template](https://github.com/blefnk/relivator-nextjs-template) repo._
 
 - **RQ21:** How do I switch the package manager from `bun` to pnpm, yarn, or npm?
-  **RA21:** Here's a variant of `scripts` for `pnpm`. Scripts presets for other package managers coming soon. Just replace it in `package.json` (and make sure it don't miss anything).
+  **RA21:** Here's a variant of `scripts` for `pnpm`. Scripts presets for other package managers are coming soon. Just replace it in `package.json` (and make sure nothing is missing).
 
   ```json
   "scripts": {
@@ -61,7 +65,6 @@ _You can find other RQs (Reliverse Questions) in the `[relivator-nextjs-template
     "lint": "pnpm eslint --cache --fix . && pnpm biome lint --write .",
     "lint:al": "pnpm addons-linter ./extension/",
     "lint:we": "pnpm web-ext lint",
-    "preinstall": "npx only-allow pnpm",
     "reli:help": "pnpm tsx reliverse.ts --help",
     "reli:pm": "tsx reliverse.ts --pm",
     "typecheck": "tsc --noEmit",
