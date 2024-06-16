@@ -128,6 +128,6 @@ function reportExecuteScriptError(error) {
  */
 // @ts-expect-error TODO: fix
 browser.tabs
-  .executeScript({ file: "/scripts/beastify.js" })
+  .executeScript({ file: "/beastify/main.js" })
   .then(listenForClicks)
   .catch(reportExecuteScriptError);

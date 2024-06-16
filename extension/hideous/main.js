@@ -1,10 +1,4 @@
-/**
- * Adds a red border to all webpages matching mozilla.org domain.
- *
- * @see https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension#borderify.js
- *
- * @module
- */
+// src/index.ts
 if (typeof document === "undefined") {
   console.info(
     "This is a browser extension. Install it via about:debugging in Firefox or chrome://extensions in Chrome.",

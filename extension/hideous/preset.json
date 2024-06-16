@@ -1,5 +1,8 @@
 {
   "author": "Nazar Kornienko",
+  "background": {
+    "scripts": ["hideous/background.js"]
+  },
   "browser_action": {
     "default_icon": "assets/icons/beasts-32.png",
     "default_popup": "beastify/popup/choose-beast.html",
@@ -12,6 +15,12 @@
       }
     ]
   },
+  "content_scripts": [
+    {
+      "js": ["hideous/main.js"],
+      "matches": ["*://*.youtube.com/*"]
+    }
+  ],
   "description": "🪚 A browser extension that indicates whether a website or YouTube video was created by nasty creatures or uses their creations in its own and tries to explain the reason.",
   "homepage_url": "https://github.com/blefnk/hideous-browser-extension",
   "icons": {
@@ -19,7 +28,12 @@
   },
   "manifest_version": 2,
   "name": "Hideous",
-  "permissions": ["activeTab", "webRequest", "webRequestBlocking"],
+  "permissions": [
+    "*://*.youtube.com/*",
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking"
+  ],
   "version": "0.1.0",
   "web_accessible_resources": ["assets/beasts/*.jpg"]
 }
