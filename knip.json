@@ -1,7 +1,13 @@
 {
   "$schema": "https://unpkg.com/knip@5/schema.json",
-  "entry": ["index.js", "scripts/{build,create}.ts", "src/index.ts"],
-  "ignore": ["src/env.ts"],
+  "entry": [
+    "index.js",
+    "scripts/{build,create}.ts",
+    "src/content/youtube.ts",
+    "src/index.ts",
+    "src/utils/background.ts"
+  ],
+  "ignore": ["src/content/backup/youtube.ts", "src/env.ts"],
   "ignoreBinaries": ["cross-env", "eslint"],
   "ignoreDependencies": [
     "@biomejs/biome",

@@ -8,6 +8,8 @@
 
 ⭐ This project is part of the ecosystem of the [Relivator](https://github.com/blefnk/relivator) and [Reliverse](https://github.com/blefnk/reliverse) projects. 🙏 Please give a star to our projects to make them even better.
 
+**Template Demo**: [🦊 Firefox Addons](https://addons.mozilla.org/firefox/addon/browser-extension-template) _(visit mozilla.org after installation)_
+
 ## Scripts
 
 - To install dependencies: `bun install`
@@ -53,8 +55,8 @@ _You can find other RQs (Reliverse Questions) in the [relivator-nextjs-template]
 
   ```json
   "scripts": {
-    "appts": "run-s knip format lint typestat typecheck build",
-    "build": "pnpm build ./src/index.ts --outdir ./extension/",
+    "appts": "run-s knip lint build format typecheck",
+    "build": "pnpm build ./src/content/youtube.ts --outdir ./extension/content/ && pnpm build ./src/utils/background.ts --outdir ./extension/utils/",
     "debug:eslint": "pnpm cross-env TIMING=12 eslint --fix .",
     "dev": "pnpm run src/index.ts",
     "dev:ext": "pnpm web-ext run --source-dir ./extension/",
@@ -67,6 +69,8 @@ _You can find other RQs (Reliverse Questions) in the [relivator-nextjs-template]
     "lint:we": "pnpm web-ext lint",
     "reli:help": "pnpm tsx reliverse.ts --help",
     "reli:pm": "tsx reliverse.ts --pm",
+    "reli:vscode": "pnpm tsx .vscode/presets/switcher.ts",
+    "system": "envinfo --system --binaries --utilities",
     "typecheck": "tsc --noEmit",
     "typestat": "typestat --config typestat.json"
   }

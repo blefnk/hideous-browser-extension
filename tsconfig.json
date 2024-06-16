@@ -43,16 +43,15 @@
   },
   "exclude": ["node_modules"],
   "include": [
-    "**/*.cjs",
     "**/*.cts",
     "**/*.d.ts",
-    "**/*.js",
-    "**/*.mjs",
+    "**/*.mdx",
     "**/*.mtx",
     "**/*.test.ts",
     "**/*.ts",
     "**/*.tsx",
     ".vscode/**/*.ts",
+    "eslint.config.js",
     "scripts/**/*.ts"
   ]
 }

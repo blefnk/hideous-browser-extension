@@ -1,5 +1,3 @@
-// @ts-check
-
 import eslint from "@eslint/js";
 import stylistic from "@stylistic/eslint-plugin";
 // @ts-expect-error - no types
@@ -29,7 +27,7 @@ export default tseslint.config(
   eslint.configs.recommended,
   {
     // @see https://eslint.org/docs/latest/use/configure/ignore#ignoring-directories
-    ignores: ["**/build/", "**/dist/", "**/node_modules/"],
+    ignores: ["**/build/", "**/dist/", "**/node_modules/", "extension/"],
   },
   {
     // @see https://eslint.org/docs/latest/use/configure
@@ -48,7 +46,7 @@ export default tseslint.config(
       }),
       sonarjs.configs.recommended,
     ],
-    files: ["**/*.{js,ts,cjs,cts,mjs,mts,jsx,tsx,mjsx,mtsx}"],
+    files: ["**/*.{ts,cts,mts,tsx,mtsx,js,cjs,mjs,jsx,mjsx}"],
     languageOptions: {
       globals: {
         ...globals.browser,
@@ -67,7 +65,7 @@ export default tseslint.config(
           es2024: true,
           node: true,
         },
-        project: ["./tsconfig.json"],
+        projectService: true,
         sourceType: "module",
         tsconfigRootDir: __dirname("./"),
         warnOnUnsupportedTypeScriptVersion: false,
@@ -87,6 +85,7 @@ export default tseslint.config(
       ...importX.configs.recommended.rules,
       ...perfectionist.configs["recommended-natural"].rules,
       ...promisePlugin.configs.recommended.rules,
+      "@stylistic/arrow-parens": ["error", "always"],
       "@stylistic/brace-style": ["error", "1tbs", { allowSingleLine: false }],
       "@stylistic/comma-dangle": [
         "error",
@@ -122,6 +121,18 @@ export default tseslint.config(
     settings: {
       // @see https://github.com/un-ts/eslint-plugin-import-x
       "import-x/internal-regex": "^~/",
+    },
+  },
+  {
+    extends: [tseslint.configs.disableTypeChecked],
+    files: ["**/*.{js,cjs,mjs,jsx,mjsx}"],
+    rules: {
+      // turn off rules that don't apply to JS code
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/internal/no-poorly-typed-ts-props": "off",
+
+      // turn off other type-aware rules
+      "deprecation/deprecation": "off",
     },
   },
   {

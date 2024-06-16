@@ -1,5 +1,5 @@
 /**
- * Adds a red border to all webpages matching mozilla.org domain.
+ * Adds a green border to all webpages matching youtube.com domain.
  *
  * @see https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension#borderify.js
  *
