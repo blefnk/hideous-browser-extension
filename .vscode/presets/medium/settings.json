@@ -31,7 +31,6 @@
   },
   "biome.enabled": true,
   "breadcrumbs.enabled": true,
-  "chat.editor.fontFamily": "'JetBrains Mono', 'Geist Mono', 'Monaspace Argon Var', Menlo, Monaco, 'Courier New', monospace",
   "console-ninja.featureSet": "Community",
   "cSpell.enabled": true,
   "cSpell.userWords": [
@@ -48,7 +47,6 @@
   ],
   "css.lint.important": "error",
   "css.lint.unknownAtRules": "ignore",
-  "debug.console.fontFamily": "'JetBrains Mono', 'Geist Mono', 'Monaspace Argon Var', Menlo, Monaco, 'Courier New', monospace",
   "debug.toolBarLocation": "docked",
   "diffEditor.experimental.showMoves": true,
   "diffEditor.hideUnchangedRegions.enabled": true,
@@ -64,14 +62,12 @@
     "source.organizeImports.biome": "never",
     "source.removeUnused": "never"
   },
-  "editor.codeLensFontFamily": "'JetBrains Mono', 'Geist Mono', 'Monaspace Argon Var', Menlo, Monaco, 'Courier New', monospace",
   "editor.colorDecorators": true,
   "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorStyle": "line",
   "editor.defaultFormatter": "biomejs.biome",
   "editor.detectIndentation": false,
-  "editor.fontFamily": "'JetBrains Mono', 'Geist Mono', 'Monaspace Argon Var', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.fontVariations": true,
@@ -83,7 +79,6 @@
   "editor.guides.bracketPairs": true,
   "editor.guides.indentation": false,
   "editor.hideCursorInOverviewRuler": false,
-  "editor.inlayHints.fontFamily": "'JetBrains Mono', 'Geist Mono', 'Monaspace Argon Var', Menlo, Monaco, 'Courier New', monospace",
   "editor.inlineSuggest.enabled": true,
   "editor.inlineSuggest.showToolbar": "always",
   "editor.insertSpaces": true,
@@ -347,7 +342,6 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "json.validate.enable": false,
   "markdown.extension.preview.autoShowPreviewToSide": false,
-  "markdown.preview.fontFamily": "'JetBrains Mono', 'Geist Mono', 'Monaspace Argon Var', Menlo, Monaco, 'Courier New', monospace",
   "markdown.preview.scrollEditorWithPreview": true,
   "markdown.preview.scrollPreviewWithEditor": true,
   "markdownlint.config": {
@@ -355,7 +349,6 @@
       "allowed_elements": ["a", "details", "img", "p", "summary"]
     }
   },
-  "notebook.output.fontFamily": "'JetBrains Mono', 'Geist Mono', 'Monaspace Argon Var', Menlo, Monaco, 'Courier New', monospace",
   "openMultipleFiles.exclude": [
     ".git",
     ".million",
@@ -383,7 +376,6 @@
   },
   "pop-icon-theme.hidesExplorerArrows": true,
   "problems.showCurrentInStatus": true,
-  "scm.inputFontFamily": "'JetBrains Mono', 'Geist Mono', 'Monaspace Argon Var', Menlo, Monaco, 'Courier New', monospace",
   "search.exclude": {
     "**/.git": true,
     "**/node_modules/**": false,
@@ -395,7 +387,6 @@
     ["(?:'|\"|`)([^']*)(?:'|\"|`)", "cx\\(([^)]*)\\)"]
   ],
   "terminal.integrated.env.windows": {},
-  "terminal.integrated.fontFamily": "'JetBrains Mono', 'Geist Mono', 'Monaspace Argon Var', Menlo, Monaco, 'Courier New', monospace",
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.smoothScrolling": true,
   "typescript.enablePromptUseWorkspaceTsdk": true,

@@ -1,57 +1,61 @@
 # hideous-browser-extension
 
+🪚 Розширення для Firefox (версія для Chrome з'явиться незабаром) локально аналізує та видаляє москальську з переглядаємих сторінок. Воно також визначає, чи був створений контент на сайті або в YouTube особами з боліт, і чи використовує певний контент їхні творіння. Крім того, розширення може за бажанням видаляти такий контент, а за необхідністю намагатиметься пояснити причину видалення. Закопаємо гидких створінь з їхньою "творчістю" у їхнє ж болото!
+
+> **Майже все що написано нижче не є актуальним для hideous-browser-extension і буде видалено незабаром. Як і декотрі файли та код у кодовій базі.**
+
 🪚 A browser extension that indicates whether a website or YouTube video was created by nasty creatures or uses their creations in its own and tries to explain the reason.
 
 ## template-browser-extension
 
-💡 Do you need a cool starter for your next browser extension? You can use [template-browser-extension](https://github.com/blefnk/template-browser-extension)! ✅ Bun, TypeScript, ESLint v9, etc. 💻 Compatible with Mozilla Firefox and Chromium-based browsers (Google Chrome, Microsoft Edge, Opera, Vivaldi, etc.)
+💡 Потрібен крутий стартер для вашого наступного розширення браузера? Ви можете використовувати [template-browser-extension](https://github.com/blefnk/template-browser-extension)! ✅ Bun, TypeScript, ESLint v9 тощо. 💻 Сумісний з Mozilla Firefox та браузерами на основі Chromium (Google Chrome, Microsoft Edge, Opera, Vivaldi тощо).
 
-⭐ This project is part of the ecosystem of the [Relivator](https://github.com/blefnk/relivator) and [Reliverse](https://github.com/blefnk/reliverse) projects. 🙏 Please give a star to our projects to make them even better.
+⭐ Цей проєкт є частиною екосистеми проєктів [Relivator](https://github.com/blefnk/relivator) та [Reliverse](https://github.com/blefnk/reliverse). 🙏 Будь ласка, поставте зірочку нашим проєктам, щоб зробити їх ще кращими.
 
-**Template Demo**: [🦊 Firefox Addons](https://addons.mozilla.org/firefox/addon/browser-extension-template) _(visit mozilla.org after installation)_
+**Демо шаблону**: [🦊 Firefox Addons](https://addons.mozilla.org/firefox/addon/browser-extension-template) _(відвідайте mozilla.org після встановлення)_
 
-## Scripts
+## Скрипти
 
-- To install dependencies: `bun install`
-- To check/lint/format: `bun appts`
-- To build: `bun run build`
-- To lint: `bun lint`
-- To run: `bun dev`
+- Для встановлення залежностей: `bun install`
+- Для перевірки/лінтингу/форматування: `bun appts`
+- Для збірки: `bun run build`
+- Для лінтингу: `bun lint`
+- Для запуску: `bun dev`
 
-## 🩷 Sponsors
+## 🩷 Спонсори
 
-Thank you, everyone, for your support and for sharing this project! This project, Relivator, and Reliverse are currently sponsored by the following awesome people/organizations:
+Дякуємо всім за підтримку та поширення цього проєкту! Цей проєкт, Relivator та Reliverse на даний момент спонсоруються наступними чудовими людьми/організаціями:
 
 ### [Patreon](https://patreon.com/blefnk), [Buy Me a Coffee](https://buymeacoffee.com/blefnk), [Ko-fi](https://ko-fi.com/blefnk)
 
-Love using this project? If you're feeling generous, I'd appreciate a cup of coffee. You'll get Reliverse Pro, access to some private repos, pre-release downloads, and the ability to influence my project planning. Thanks!
+Любите користуватися цим проєктом? Якщо ви відчуваєте щедрість, я був би вдячний за чашку кави. Ви отримаєте доступ до Reliverse Pro, приватних репозиторіїв, попередніх релізів та можливість впливати на планування проєктів. Дякую!
 
-### [Discord Server Boost](https://discord.gg/C4Z46fHKQ8)
+### [Boost Discord Server](https://discord.gg/C4Z46fHKQ8)
 
 - demir
 
-## Roadmap
+## Дорожня карта
 
-TODO: Add `bun web-ext lint` to the `bun lint` script, and `bun web-ext run` to `bun dev`. Currently, an error is thrown: `Error: Cannot find module './url'`.
+TODO: Додати `bun web-ext lint` до скрипту `bun lint`, та `bun web-ext run` до `bun dev`. Наразі виникає помилка: `Error: Cannot find module './url'`.
 
-TODO: Try to remove `bun` and install `pnpm`. Check if `web-ext` works with this package manager, which works natively with `nodejs` (`bun` has its own libs).
+TODO: Спробувати видалити `bun` та встановити `pnpm`. Перевірити, чи працює `web-ext` з цим менеджером пакетів, який працює нативно з `nodejs` (у `bun` є власні бібліотеки).
 
-TODO: `bun addons-linter ./extension/` doesn't work as well. This command throws an error: `You did not build addons-linter yet`. Maybe because of `bun`.
+TODO: `bun addons-linter ./extension/` також не працює. Ця команда викликає помилку: `You did not build addons-linter yet`. Можливо, це через `bun`.
 
-## Resources
+## Ресурси
 
-- [web-ext](https://github.com/mozilla/web-ext): A command line tool to help build, run, and test web extensions.
+- [web-ext](https://github.com/mozilla/web-ext): Інструмент командного рядка для допомоги у розробці, запуску та тестуванні веброзширень.
 
-## Additional
+## Додатково
 
-This project was created using `bun init` in bun v1.1.12. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+Цей проєкт створено за допомогою `bun init` у версії bun v1.1.12. [Bun](https://bun.sh) — це швидке середовище виконання JavaScript.
 
 ## FAQ
 
-_You can find other RQs (Reliverse Questions) in the [relivator-nextjs-template](https://github.com/blefnk/relivator-nextjs-template) repo._
+_Інші RQ (Reliverse Questions) можна знайти в репозиторії [relivator-nextjs-template](https://github.com/blefnk/relivator-nextjs-template)._
 
-- **RQ21:** How do I switch the package manager from `bun` to pnpm, yarn, or npm?
-  **RA21:** Here's a variant of `scripts` for `pnpm`. Scripts presets for other package managers are coming soon. Just replace it in `package.json` (and make sure nothing is missing).
+- **RQ21:** Як переключити менеджер пакетів з `bun` на pnpm, yarn або npm?
+  **RA21:** Ось варіант `scripts` для `pnpm`. Пресети скриптів для інших менеджерів пакетів будуть додані незабаром. Просто замініть його в `package.json` (і переконайтеся, що нічого не пропущено).
 
   ```json
   "scripts": {
@@ -76,9 +80,9 @@ _You can find other RQs (Reliverse Questions) in the [relivator-nextjs-template]
   }
   ```
 
-## Project Structure
+## Структура проєкту
 
-**Only a few of the files are listed here.** This section will be updated in the future versions.
+**Лише деякі файли тут перераховані.** Цей розділ буде оновлено у майбутніх версіях.
 
 - [.vscode](https://code.visualstudio.com)
   - presets
@@ -105,41 +109,38 @@ _You can find other RQs (Reliverse Questions) in the [relivator-nextjs-template]
 
 ---
 
-## What it does
+## Що робить це розширення
 
-The extension includes:
+Розширення включає:
 
-- a browser action with a popup including HTML, CSS, and JS
-- a content script
-- three images, each of a different beast, packaged as web accessible resources
+- браузерну дію з спливаючим вікном, яке містить HTML, CSS та JS
+- контентний скрипт
+- три зображення, кожне з яких представляє різного "звіра", що включені як веб-доступні ресурси
 
-When the user clicks the browser action button, the popup is shown, enabling
-the user to choose one of three beasts.
+Коли користувач натискає на кнопку дії в браузері, з'являється спливаюче вікно, що дозволяє вибрати одного з трьох звірів.
 
-When it is shown, the popup injects a content script into the current page.
+Після відкриття спливаючого вікна, в поточну сторінку впроваджується контентний скрипт.
 
-When the user chooses a beast, the extension sends the content script a message containing
-the name of the chosen beast.
+Коли користувач обирає звіра, розширення надсилає повідомлення з ім'ям вибраного звіра до контентного скрипта.
 
-When the content script receives this message, it replaces the current page
-content with an image of the chosen beast.
+Коли контентний скрипт отримує це повідомлення, він замінює поточний вміст сторінки на зображення вибраного звіра.
 
-When the user clicks the reset button, the page reloads, and reverts to its original form.
+Коли користувач натискає кнопку скидання, сторінка перезавантажується і повертається до свого початкового вигляду.
 
-Note that:
+Зверніть увагу, що:
 
-- if the user reloads the tab, or switches tabs, while the popup is open, then the popup won't be able to beastify the page any more (because the content script was injected into the original tab).
+- якщо користувач перезавантажує вкладку або перемикається між вкладками під час відкритого спливаючого вікна, то розширення більше не зможе змінювати сторінку (оскільки контентний скрипт був впроваджений лише в оригінальну вкладку).
 
-- by default [`tabs.executeScript()`](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/tabs/executeScript) injects the script only when the web page and its resources have finished loading. This means that clicks in the popup will have no effect until the page has finished loading.
+- за замовчуванням [`tabs.executeScript()`](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/tabs/executeScript) впроваджує скрипт лише після того, як вебсторінка та її ресурси завершать завантаження. Це означає, що кліки у спливаючому вікні не матимуть ефекту, доки сторінка не завантажиться повністю.
 
-- it's not possible to inject content scripts into certain pages, including privileged browser pages like "about:debugging" and the [addons.mozilla.org](https://addons.mozilla.org/) website. If the user clicks the beastify icon when such a page is loaded into the active tab, the popup displays an error message.
+- неможливо впроваджувати контентні скрипти в певні сторінки, включно з привілейованими сторінками браузера, такими як "about:debugging", і на вебсайт [addons.mozilla.org](https://addons.mozilla.org/). Якщо користувач натискає на іконку розширення, коли така сторінка завантажена у активну вкладку, у спливаючому вікні буде відображено повідомлення про помилку.
 
-## What it shows
+## Що показує це розширення
 
-- write a browser action with a popup
-- how to have different browser_action images based upon the theme
-- give the popup style and behavior using CSS and JS
-- inject a content script programmatically using `tabs.executeScript()`
-- send a message from the main extension to a content script
-- use web accessible resources to enable web pages to load packaged content
-- reload web pages
+- як створити браузерну дію зі спливаючим вікном
+- як змінювати зображення `browser_action` залежно від теми
+- як стилізувати спливаюче вікно та додати до нього функціональність за допомогою CSS та JS
+- як програмно впроваджувати контентний скрипт за допомогою `tabs.executeScript()`
+- як надсилати повідомлення з головного розширення до контентного скрипта
+- як використовувати веб-доступні ресурси, щоб вебсторінки могли завантажувати упакований контент
+- як перезавантажувати вебсторінки

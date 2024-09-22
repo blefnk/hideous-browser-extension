@@ -18,7 +18,7 @@ import globals from "globals";
 import { fileURLToPath } from "node:url";
 import tseslint from "typescript-eslint";
 
-// @see https://github.com/blefnk/relivator/blob/main/eslint.config.mjs
+// @see https://github.com/blefnk/relivator/blob/main/eslint.config.js
 const __dirname = (/** @type {string | URL} */ file) =>
   fileURLToPath(new URL(file, import.meta.url));
 
